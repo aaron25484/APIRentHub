@@ -38,7 +38,7 @@ export const createBooking = async (req: Request, res: Response) => {
     res.status(201).json(booking);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: error.message || 'Error creating booking' });
+    res.status(500).json({ error: 'Error creating booking'});
   }
 };
 
